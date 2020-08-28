@@ -20,6 +20,10 @@
   
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+<!-- link font -->
+  <link href="//db.onlinewebfonts.com/c/9f94dc20bb2a09c15241d3a880b7ad01?family=Menlo" rel="stylesheet" type="text/css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Bellota+Text:wght@700&display=swap" rel="stylesheet"> 
+  
   <script src="https://kit.fontawesome.com/0f0f7849a1.js" crossorigin="anonymous"></script>
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -28,30 +32,48 @@
   <!-- Add your site or application content here -->
 
   <header class="jumbotron bgColorCharcoalBlue">
-    <h1 class="display-4">DEV BANK</h1>
+    <h1>DEV BANK</h1>
     <p class="lead"> &lt; <span class="baliseBlue">une banque</span> &gt;, mais <span class="baliseRed">flex</span>;</p>
     <nav id="burger">
       <i class="fas fa-bars colorHoneyYellow"></i>
     </nav>
   </header>
-  <nav><ul class="nav">
-    <li class="nav-item">
-      <a class="nav-link active" href="#">Active</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-    </li>
-  </ul></nav>
+  <nav class="bgColorQueenBlue" id="navBar"> 
+    <ul class="nav">
+      <li class="nav-item ">
+        <a class="nav-link active colorHoneyYellow" href="#">Accueil</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link colorHoneyYellow" href="#">Statistique</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link colorHoneyYellow" href="#">Blog</a>
+      </li>
+          <li class="nav-item ">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Création Compte</a>
+          </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Virement</a>
+      </li>
+    </ul>
+  </nav>
   <main class="container">
+    <h2>Vos comptes :</h2>
+    <div class="card">
+      <div class="card-header font-weight-bold">
+        Compte courant
+      </div>
+      <div class="card-body">
+        <p class="card-title pCard">XXXX 5698 <span>+ 789 €</span></p>
+        <hr>
+        <p class="card-text pCard ">Solde prévisionnel. <span>+ 678 €</span> </p>
+        <a href="#" class="btn bgColorHoneyYellow ">Voir plus</a>
+      </div>
+    </div>
     
+
   </main>
-  <footer class="jumbotron jumbotron-fluid colorHoneyYellow">
+  <footer class="jumbotron jumbotron-fluid bgColorQueenBlue">
     <div class="container">
       <p class="lead">DEV BANK - tous droits réservés © 2020 </p>
       <p class="lead">Site crée avec Bootstrap. </p>
