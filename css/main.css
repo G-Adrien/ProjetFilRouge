@@ -87,6 +87,201 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+   /* ############# FONT ############# */
+   @import url(//db.onlinewebfonts.com/c/9f94dc20bb2a09c15241d3a880b7ad01?family=Menlo);
+   @font-face {
+     font-family: "Menlo"; src: url("//db.onlinewebfonts.com/t/9f94dc20bb2a09c15241d3a880b7ad01.eot"); src: url("//db.onlinewebfonts.com/t/9f94dc20bb2a09c15241d3a880b7ad01.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/9f94dc20bb2a09c15241d3a880b7ad01.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/9f94dc20bb2a09c15241d3a880b7ad01.woff") format("woff"), url("//db.onlinewebfonts.com/t/9f94dc20bb2a09c15241d3a880b7ad01.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/9f94dc20bb2a09c15241d3a880b7ad01.svg#Menlo") format("svg");
+     } 
+  @import url('https://fonts.googleapis.com/css2?family=Bellota+Text&display=swap');
+  
+   /* ############# utility class ############# */
+  
+  
+   .bgColorHoneyYellow{
+    background-color: #F6AE2D;
+  }
+
+  .bgColorDarkSkyBlue{
+    background-color: #86BBD8;
+  }
+  .bgColorCharcoalBlue{
+    background-color: #2F4858;
+  }
+  
+  .bgColorQueenBlue{
+    background-color: #33658A;
+  }
+
+  .colorHoneyYellow{
+    color: #F6AE2D;
+  }
+
+   .colorDarkSkyBlue{
+    color: #86BBD8;
+  }
+   .colorCharcoalBlue{
+    color: #2F4858;
+  }
+
+  .colorQueenBlue{
+    color: #33658A;
+  }
+   
+   .baliseBlue{
+     color:#4e8abb;
+   }
+   .baliseRed{
+     color:#cc8f77;  
+   }
+   /* ############# Header ############# */
+
+
+h1{
+  font-weight: bold;
+  margin:0;
+  color:white;
+  font-family: "Bellota Text";
+  font-size: 50px;
+  
+}
+.jumbotron{
+  border-radius: 0;
+  padding: 20px 20px;
+  position: relative;
+  margin:0;
+}
+.jumbotron p{
+  margin:0;
+  color: white;
+}
+#burger{
+  position: absolute;
+  top: 30%;
+  right: 20px;
+  border: solid #F6AE2D 4px;
+  border-radius: 1000px;
+  padding: 10px 15px;
+}
+#burger i{
+  font-size: 40px;
+}
+/* ############# NAV ############# */
+#navBar{
+  font-family: "Menlo";
+  display: none;
+}
+#navBar ul{
+  margin-left: 1em;
+}
+/* ############# Main ############# */
+
+main{
+  margin-top:20px;
+}
+
+.pCard{
+  display: flex;
+  justify-content: space-between;
+}
+.pCard span{
+  color: green;
+}
+
+.card{
+  margin: 20px 0;
+  max-height: 199px;
+}
+
+.card-header{
+  padding: 8px 20px;
+}
+
+.card-body{
+  padding:10px 15px;
+}
+
+.btnAccount{
+  background-color: #F6AE2D;
+  padding: 6px 10px;
+  border-radius: 50px;
+  color: #242728;
+  margin:auto 5px;
+}
+
+.iconMore{
+display: flex;
+flex-wrap: wrap;
+overflow-wrap: normal;
+}
+
+#more{
+  display: none;
+}
+#creditCard{
+  display: none;
+}
+#rib{
+  display: none;
+}
+
+/* ############# Footer ############# */
+
+footer{
+  margin:0 !important;
+}
+
+footer p{
+  display: flex;
+  justify-content: center;
+  font-size: small !important;
+  color: white;
+  font-family: "Menlo";
+  
+}
+/* ############# Foomedia queries ter ############# */
+@media screen and (min-width: 450px) {
+  #rib{
+    display: inline;
+  }
+}
+
+  @media screen and (min-width: 535px) {
+    #creditCard{
+      display: inline;
+    }
+  }
+
+@media screen and (min-width: 768px) {
+  #burger{display: none;
+  }
+  #navBar{
+    display: block;
+  }
+  .jumbotron{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  h1{
+    font-size: 60px;
+  }
+  .pCard span{
+    margin-right: 55 px;
+  }
+  #more{
+    display: inline;
+  }
+
+}
+@media screen and (min-width: 1200px) {
+  #navBar{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  }
 /* ==========================================================================
    Helper classes
    ========================================================================== */

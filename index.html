@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="fr">
 
 <head>
   <meta charset="utf-8">
@@ -14,22 +14,125 @@
 
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  
   <!-- Place favicon.ico in the root directory -->
-
+  
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
-
+<!-- link font -->
+  <link href="//db.onlinewebfonts.com/c/9f94dc20bb2a09c15241d3a880b7ad01?family=Menlo" rel="stylesheet" type="text/css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Bellota+Text:wght@700&display=swap" rel="stylesheet"> 
+  
+  <script src="https://kit.fontawesome.com/0f0f7849a1.js" crossorigin="anonymous"></script>
   <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
-
   <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
+
+  <header class="jumbotron bgColorCharcoalBlue">
+    <h1>DEV BANK</h1>
+    <p class="lead"> &lt; <span class="baliseBlue">une banque</span> &gt;, mais <span class="baliseRed">flex</span>;</p>
+    <nav id="burger">
+      <i class="fas fa-bars colorHoneyYellow"></i>
+    </nav>
+  </header>
+  <nav class="bgColorQueenBlue" id="navBar"> 
+    <ul class="nav">
+      <li class="nav-item ">
+        <a class="nav-link active colorHoneyYellow" href="#">Accueil</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link colorHoneyYellow" href="#">Statistique</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link colorHoneyYellow" href="#">Blog</a>
+      </li>
+          <li class="nav-item ">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Création Compte</a>
+          </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Virement</a>
+      </li>
+    </ul>
+  </nav>
+  <main class="container">
+    <h2>Vos comptes :</h2>
+    <div class="card">
+      <div class="card-header font-weight-bold">
+        Compte courant
+      </div>
+      <div class="card-body">
+        <p class="card-title pCard">XXXX 5698 <span>+ 789,45 €</span></p>
+        <hr>
+        <p class="card-text pCard ">Solde prévisionnel : <span>+ 678,25 €</span> </p>
+        <div class="d-flex justify-content-between align-items-center">
+          <a href="#" class="btn bgColorHoneyYellow ">Voir plus</a>
+          <div class="iconMore d-flex flex-wrap">
+            <a href="#" class="btnAccount"><i class="fas fa-piggy-bank"></i>Détail du compte</a>
+            <a href="#" class="btnAccount" id="rib"><i class="fas fa-money-check"></i>RIB/IBAN</a>
+            <a href="#" class="btnAccount" id="creditCard"><i class="far fa-credit-card"></i>Carte</a>
+            <a href="#" class="btnAccount" id="more"><i class="fas fa-copy"></i>Plus</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header font-weight-bold">
+        Livret A
+      </div>
+      <div class="card-body">
+        <p class="card-title pCard">XXXX 8380 <span>+ 5 280 €</span></p>
+        <hr>
+        <p class="card-text pCard ">Solde prévisionnel : <span>+ 5 280 €</span> </p>
+        <div class="d-flex justify-content-between align-items-center">
+          <a href="#" class="btn bgColorHoneyYellow ">Voir plus</a>
+          <div class="iconMore d-flex flex-wrap">
+            <a href="#" class="btnAccount"><i class="fas fa-piggy-bank"></i>Détail du compte</a>
+            <a href="#" class="btnAccount" id="rib"><i class="fas fa-money-check"></i>BIB/IBAN</a>
+            <a href="#" class="btnAccount" id="creditCard"><i class="far fa-credit-card"></i>Carte</a>
+            <a href="#" class="btnAccount" id="more"><i class="fas fa-copy"></i>Plus</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header font-weight-bold">
+        P.E.L
+      </div>
+      <div class="card-body">
+        <p class="card-title pCard">XXXX 4571 <span>+50 965 €</span></p>
+        <hr>
+        <p class="card-text pCard ">Solde prévisionnel : <span>+ 50 965 €</span> </p>
+        <div class="d-flex justify-content-between align-items-center">
+          <a href="#" class="btn bgColorHoneyYellow ">Voir plus</a>
+          <div class="iconMore d-flex flex-wrap">
+            <a href="#" class="btnAccount"><i class="fas fa-piggy-bank"></i>Détail du compte</a>
+            <a href="#" class="btnAccount" id="rib"><i class="fas fa-money-check"></i>BIB/IBAN</a>
+            <a href="#" class="btnAccount" id="creditCard"><i class="far fa-credit-card"></i>Carte</a>
+            <a href="#" class="btnAccount" id="more"><i class="fas fa-copy"></i>Plus</a>
+          </div>
+        </div>      </div>
+    </div>
+    
+
+  </main>
+  <footer class="jumbotron jumbotron-fluid bgColorQueenBlue">
+    <div class="container">
+      <p class="lead">DEV BANK - tous droits réservés © 2020 </p>
+      <p class="lead">Site crée avec Bootstrap. </p>
+    </div>
+  </footer>
+  
+  
+  
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
-
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
