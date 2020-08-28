@@ -187,6 +187,43 @@ main{
   color: green;
 }
 
+.card{
+  margin: 20px 0;
+  max-height: 199px;
+}
+
+.card-header{
+  padding: 8px 20px;
+}
+
+.card-body{
+  padding:10px 15px;
+}
+
+.btnAccount{
+  background-color: #F6AE2D;
+  padding: 6px 10px;
+  border-radius: 50px;
+  color: #242728;
+  margin:auto 5px;
+}
+
+.iconMore{
+display: flex;
+flex-wrap: wrap;
+overflow-wrap: normal;
+}
+
+#more{
+  display: none;
+}
+#creditCard{
+  display: none;
+}
+#rib{
+  display: none;
+}
+
 /* ############# Footer ############# */
 
 footer{
@@ -202,6 +239,17 @@ footer p{
   
 }
 /* ############# Foomedia queries ter ############# */
+@media screen and (min-width: 450px) {
+  #rib{
+    display: inline;
+  }
+}
+
+  @media screen and (min-width: 535px) {
+    #creditCard{
+      display: inline;
+    }
+  }
 
 @media screen and (min-width: 768px) {
   #burger{display: none;
@@ -218,6 +266,13 @@ footer p{
   h1{
     font-size: 60px;
   }
+  .pCard span{
+    margin-right: 55 px;
+  }
+  #more{
+    display: inline;
+  }
+
 }
 @media screen and (min-width: 1200px) {
   #navBar{
