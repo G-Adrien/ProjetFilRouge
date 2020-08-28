@@ -88,6 +88,86 @@ textarea {
    ========================================================================== */
 
 
+   /* ############# utility class ############# */
+  
+   .bgColorHoneyYellow{
+    background-color: #F6AE2D;
+  }
+
+   .bgColorDarkSkyBlue{
+    background-color: #86BBD8;
+  }
+   .bgColorCharcoalBlue{
+    background-color: #2F4858;
+  }
+
+  .bgColorQueenBlue{
+    background-color: #33658A;
+  }
+
+  .colorHoneyYellow{
+    color: #F6AE2D;
+  }
+
+   .colorDarkSkyBlue{
+    color: #86BBD8;
+  }
+   .colorCharcoalBlue{
+    color: #2F4858;
+  }
+
+  .colorQueenBlue{
+    color: #33658A;
+  }
+   
+   .baliseBlue{
+     color:#4e8abb;
+   }
+   .baliseRed{
+     color:#cc8f77;  
+   }
+   /* ############# Header ############# */
+
+
+h1{
+  font-weight: bold;
+  margin:0;
+  
+}
+.jumbotron{
+  border-radius: 0;
+  padding: 20px 20px;
+  position: relative;
+}
+.jumbotron p{
+  margin:0;
+  color: white;
+}
+#burger{
+  position: absolute;
+  top: 30%;
+  right: 20px;
+  border: solid #F6AE2D 0.3em;
+  border-radius: 1000px;
+  padding: 2% 3%;
+}
+#burger i{
+  font-size: 40px;
+}
+
+/* ############# Footer ############# */
+
+footer{
+  margin:0 !important;
+}
+
+footer p{
+  display: flex;
+  justify-content: center;
+  font-size: small !important;
+  color: white;
+  
+}
 
 /* ==========================================================================
    Helper classes
