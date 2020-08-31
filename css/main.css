@@ -133,6 +133,40 @@ textarea {
    .baliseRed{
      color:#cc8f77;  
    }
+
+   body{
+     position: relative;
+   }
+   #layer{
+     top: 0;
+     position: fixed;
+     width: 100vw;
+     height: 100vh;
+     background-color: rgba(62, 62, 62, 0.598);
+     z-index: 2;
+    }
+
+   #messageHTML{
+     position: absolute;
+     background-color: white;
+     height: 200px;
+     width: 400px;
+     border-radius: 5px;
+     top: 50vh;
+     left:50vw;
+   }
+
+   .fa-times-circle{
+     color: white;
+     font-size: 30px;
+     position: absolute;
+     top:165px;
+     left:1040px;
+   }
+   .fa-times-circle:hover{
+    cursor: pointer;
+   }
+
    /* ############# Header ############# */
 
 
@@ -213,6 +247,9 @@ display: flex;
 flex-wrap: wrap;
 overflow-wrap: normal;
 }
+.iconMore i{
+  padding-right: 5px;
+}
 
 #more{
   display: none;
@@ -245,10 +282,8 @@ footer p{
   }
 }
 
-  @media screen and (min-width: 535px) {
-    #creditCard{
-      display: inline;
-    }
+  @media screen and (min-width: 545px) {
+   
   }
 
 @media screen and (min-width: 768px) {
@@ -270,6 +305,9 @@ footer p{
     margin-right: 55 px;
   }
   #more{
+    display: inline;
+  }
+  #creditCard{
     display: inline;
   }
 
