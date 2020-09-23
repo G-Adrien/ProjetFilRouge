@@ -137,13 +137,15 @@ textarea {
    body{
      position: relative;
    }
-   #layer{
-     top: 0;
+   #layerBackground{
+     top:0;
      position: fixed;
      width: 100vw;
      height: 100vh;
      background-color: rgba(62, 62, 62, 0.598);
-     z-index: 2;
+     z-index: 1000;
+     display: none;  
+     /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ligne du dessus à supprimer !!! */
     }
 
    #messageHTML{
@@ -152,16 +154,17 @@ textarea {
      height: 200px;
      width: 400px;
      border-radius: 5px;
-     top: 50vh;
-     left:50vw;
+     margin-top:100px;
+     left: 50%;
+     transform: translate(-50%, -00%);
    }
 
    .fa-times-circle{
      color: white;
      font-size: 30px;
      position: absolute;
-     top:165px;
-     left:1040px;
+     top:-28px;
+     right:-28px;
    }
    .fa-times-circle:hover{
     cursor: pointer;
@@ -275,7 +278,7 @@ footer p{
   font-family: "Menlo";
   
 }
-/* ############# Foomedia queries ter ############# */
+/* ############# media queries ############# */
 @media screen and (min-width: 450px) {
   #rib{
     display: inline;
@@ -319,7 +322,7 @@ footer p{
     flex-direction: column;
     align-items: center;
   }
-  }
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */

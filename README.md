@@ -1,10 +1,11 @@
 
 # Projet fil Rouge (Banque)
 
+
 ### Projet de semaine n°8 AFPA Développeur Web 
 
 
-Projet en continu  en **HTML / CSS** 
+Projet en continu  en **HTML / CSS et JS** 
 
 HTML5, CSS3 et JavaScript normes ES6.
 
@@ -49,7 +50,21 @@ Ci-dessous extrait de l'énoncé :
 >- Le repository contient un readme, une description et des tags
 >- Vous utilisez un outil de gestion de projet de type KANBAN. Idéalement pour chaque tâche vousestimez le temps et la priorité et vous vous mettez dans la peau de l’utilisateur.
 
+### Projet de semaine n°12 AFPA Développeur Web 
 
+Ajout de **PHP** (version 7)
+
+> #### Spécifications fonctionnelles:
+>- Afin de gagner en maintenabilité, le template n’est plus dupliqué sur toutes les pages. Il est maintenant éclaté dans des fichiers header.php, nav.php, footer.php etc chargés sur chacune des pages.
+>
+>- Les données pour affichées les comptes en banque sur la page d’accueil sont maintenant stockées dans un tableau (cf ficher externe joint), et une boucle affiche tous les comptes. Ceux-ci ne sont plus écrits en dur dans le HTML
+>- Quand on clique sur un compte en banque, on arrive sur une page spécifique dédiée au compte et qui n’affiche que les informations de ce compte. Cette fonctionnalité utilise la transmission de données par l’URL.
+>- Quand l’utilisateur remplit le formulaire de création de compte et qu’il soumet le formulaire, le compte est créé à côté du formulaire avec les informations rentrées par l’utilisateur
+> #### Spécifications techniques:
+>
+>- PHP 7
+>- Serveur Apache2
+>- Base Boilerplate
 
 
 &nbsp;

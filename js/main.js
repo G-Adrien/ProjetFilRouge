@@ -1,11 +1,11 @@
 let cross = document.getElementsByClassName("fa-times-circle");
-let layer = document.getElementById("layer");
+let layerBackground = document.getElementById("layerBackground");
 let messageHTML = document.getElementById("")
 
 function closeLayer(){
-    console.log(layer.style.display);
-    layer.style.display = "none";
-    console.log(layer.style.display);
+    
+    layerBackground.style.display = "none";
+    
 }
 
 
