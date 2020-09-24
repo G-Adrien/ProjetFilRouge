@@ -207,9 +207,7 @@ h1{
   font-family: "Menlo";
   display: none;
 }
-#navBar ul{
-  margin-left: 1em;
-}
+
 /* ############# Main ############# */
 
 main{
@@ -246,9 +244,9 @@ main{
 }
 
 .iconMore{
-display: flex;
-flex-wrap: wrap;
-overflow-wrap: normal;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-wrap: normal;
 }
 .iconMore i{
   padding-right: 5px;
@@ -263,6 +261,12 @@ overflow-wrap: normal;
 #rib{
   display: none;
 }
+
+.btnOpen{
+  margin: 15px auto;
+}
+
+
 
 /* ############# Footer ############# */
 
@@ -285,9 +289,9 @@ footer p{
   }
 }
 
-  @media screen and (min-width: 545px) {
+/* @media screen and (min-width: 545px) {
    
-  }
+} */
 
 @media screen and (min-width: 768px) {
   #burger{display: none;
@@ -323,6 +327,9 @@ footer p{
     align-items: center;
   }
 }
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */

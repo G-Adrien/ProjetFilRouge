@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>DEV Bank</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -50,7 +50,7 @@
         <a class="nav-link colorHoneyYellow" href="blog.php">Blog</a>
       </li>
           <li class="nav-item ">
-            <a class="nav-link colorHoneyYellow" href="createAccount.php">Création Compte</a>
+            <a class="nav-link colorHoneyYellow" href="createAccount.php">Nouveau Compte</a>
           </li>
       <li class="nav-item">
         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Virement</a>

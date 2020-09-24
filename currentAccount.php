@@ -23,6 +23,6 @@ require "page/header.php";
     </div>
 
 
-<!-- <?php
+<?php
 include "page/footer.php";
-?> -->
+?>
