@@ -1,21 +1,30 @@
 <?php 
+
+
+
+require_once "data/userAccount.php";
 require "page/header.php";
-
-
-
 ?>
 
 
 
+
+    
+
     <h2>Vos comptes :</h2>
+
+<?php
+foreach($user_account as $key => $value): 
+?>
+
     <div class="card">
       <div class="card-header font-weight-bold">
-        Compte courant
+        <?php echo $value['account'] ?>
       </div>
       <div class="card-body">
-        <p class="card-title pCard">XXXX 5698 <span>+ 789,45 €</span></p>
+        <p class="card-title pCard"> <?php echo $value['number_account'] ?> <span> <?php echo $value['amount'] ?> € </span></p>
         <hr>
-        <p class="card-text pCard ">Solde prévisionnel : <span>+ 678,25 €</span> </p>
+        <p class="card-text pCard ">Dernière opération : <span> <?php echo $value['last_operation'] ?>  € </span> </p>
         <div class="d-flex justify-content-between align-items-center">
           <a href="currentAccount.php" class="btn bgColorHoneyYellow ">Voir plus</a>
           <div class="iconMore d-flex flex-wrap">
@@ -28,15 +37,27 @@ require "page/header.php";
       </div>
     </div>
 
+  <?php
+  endforeach;
+  ?>
 
-    <div class="card">
+
+  
+
+
+<?php
+include "page/footer.php";
+?>
+
+
+<!-- <div class="card">
       <div class="card-header font-weight-bold">
         Livret A
       </div>
       <div class="card-body">
         <p class="card-title pCard">XXXX 8380 <span>+ 5 280 €</span></p>
         <hr>
-        <p class="card-text pCard ">Solde prévisionnel : <span>+ 5 280 €</span> </p>
+        <p class="card-text pCard ">Dernière opération : <span>+ 5 280 €</span> </p>
         <div class="d-flex justify-content-between align-items-center">
           <a href="bookletAAccount.php" class="btn bgColorHoneyYellow ">Voir plus</a>
           <div class="iconMore d-flex flex-wrap">
@@ -57,7 +78,7 @@ require "page/header.php";
       <div class="card-body">
         <p class="card-title pCard">XXXX 4571 <span>+50 965 €</span></p>
         <hr>
-        <p class="card-text pCard ">Solde prévisionnel : <span>+ 50 965 €</span> </p>
+        <p class="card-text pCard ">Dernière opération : <span>+ 50 965 €</span> </p>
         <div class="d-flex justify-content-between align-items-center">
           <a href="pelAccount.php" class="btn bgColorHoneyYellow ">Voir plus</a>
           <div class="iconMore d-flex flex-wrap">
@@ -68,10 +89,4 @@ require "page/header.php";
           </div>
         </div>
       </div>
-    </div>
-  
-
-
-<?php
-include "page/footer.php";
-?>
+    </div> -->
