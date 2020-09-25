@@ -84,91 +84,91 @@ textarea {
 }
 
 /* ==========================================================================
-   Author's custom styles
+  Author's custom styles
    ========================================================================== */
 
-   /* ############# FONT ############# */
-   @import url(//db.onlinewebfonts.com/c/9f94dc20bb2a09c15241d3a880b7ad01?family=Menlo);
-   @font-face {
-     font-family: "Menlo"; src: url("//db.onlinewebfonts.com/t/9f94dc20bb2a09c15241d3a880b7ad01.eot"); src: url("//db.onlinewebfonts.com/t/9f94dc20bb2a09c15241d3a880b7ad01.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/9f94dc20bb2a09c15241d3a880b7ad01.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/9f94dc20bb2a09c15241d3a880b7ad01.woff") format("woff"), url("//db.onlinewebfonts.com/t/9f94dc20bb2a09c15241d3a880b7ad01.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/9f94dc20bb2a09c15241d3a880b7ad01.svg#Menlo") format("svg");
-     } 
-  @import url('https://fonts.googleapis.com/css2?family=Bellota+Text&display=swap');
+  /* ############# FONT ############# */
+  @import url(//db.onlinewebfonts.com/c/9f94dc20bb2a09c15241d3a880b7ad01?family=Menlo);
+  @font-face {
+    font-family: "Menlo"; src: url("//db.onlinewebfonts.com/t/9f94dc20bb2a09c15241d3a880b7ad01.eot"); src: url("//db.onlinewebfonts.com/t/9f94dc20bb2a09c15241d3a880b7ad01.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/9f94dc20bb2a09c15241d3a880b7ad01.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/9f94dc20bb2a09c15241d3a880b7ad01.woff") format("woff"), url("//db.onlinewebfonts.com/t/9f94dc20bb2a09c15241d3a880b7ad01.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/9f94dc20bb2a09c15241d3a880b7ad01.svg#Menlo") format("svg");
+    } 
+@import url('https://fonts.googleapis.com/css2?family=Bellota+Text&display=swap');
+
+  /* ############# utility class ############# */
+
+
+  .bgColorHoneyYellow{
+  background-color: #F6AE2D;
+}
+
+.bgColorDarkSkyBlue{
+  background-color: #86BBD8;
+}
+.bgColorCharcoalBlue{
+  background-color: #2F4858;
+}
+
+.bgColorQueenBlue{
+  background-color: #33658A;
+}
+
+.colorHoneyYellow{
+  color: #F6AE2D;
+}
+
+  .colorDarkSkyBlue{
+  color: #86BBD8;
+}
+  .colorCharcoalBlue{
+  color: #2F4858;
+}
+
+.colorQueenBlue{
+  color: #33658A;
+}
   
-   /* ############# utility class ############# */
-  
-  
-   .bgColorHoneyYellow{
-    background-color: #F6AE2D;
+  .baliseBlue{
+    color:#4e8abb;
+  }
+  .baliseRed{
+    color:#cc8f77;  
   }
 
-  .bgColorDarkSkyBlue{
-    background-color: #86BBD8;
-  }
-  .bgColorCharcoalBlue{
-    background-color: #2F4858;
-  }
-  
-  .bgColorQueenBlue{
-    background-color: #33658A;
-  }
+body{
+  position: relative;
+}
+#layerBackground{
+  top:0;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(62, 62, 62, 0.598);
+  z-index: 1000;
+  display: none;  
+  /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ligne du dessus à supprimer !!! */
+}
 
-  .colorHoneyYellow{
-    color: #F6AE2D;
-  }
+#messageHTML{
+  position: absolute;
+  background-color: white;
+  height: 200px;
+  width: 400px;
+  border-radius: 5px;
+  margin-top:100px;
+  left: 50%;
+  transform: translate(-50%, -00%);
+}
 
-   .colorDarkSkyBlue{
-    color: #86BBD8;
-  }
-   .colorCharcoalBlue{
-    color: #2F4858;
-  }
-
-  .colorQueenBlue{
-    color: #33658A;
-  }
-   
-   .baliseBlue{
-     color:#4e8abb;
-   }
-   .baliseRed{
-     color:#cc8f77;  
-   }
-
-   body{
-     position: relative;
-   }
-   #layerBackground{
-     top:0;
-     position: fixed;
-     width: 100vw;
-     height: 100vh;
-     background-color: rgba(62, 62, 62, 0.598);
-     z-index: 1000;
-     display: none;  
-     /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ligne du dessus à supprimer !!! */
-    }
-
-   #messageHTML{
-     position: absolute;
-     background-color: white;
-     height: 200px;
-     width: 400px;
-     border-radius: 5px;
-     margin-top:100px;
-     left: 50%;
-     transform: translate(-50%, -00%);
-   }
-
-   .fa-times-circle{
-     color: white;
-     font-size: 30px;
-     position: absolute;
-     top:-28px;
-     right:-28px;
-   }
-   .fa-times-circle:hover{
-    cursor: pointer;
-   }
+.fa-times-circle{
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  top:-28px;
+  right:-28px;
+}
+.fa-times-circle:hover{
+cursor: pointer;
+}
 
    /* ############# Header ############# */
 
@@ -207,9 +207,7 @@ h1{
   font-family: "Menlo";
   display: none;
 }
-#navBar ul{
-  margin-left: 1em;
-}
+
 /* ############# Main ############# */
 
 main{
@@ -246,9 +244,9 @@ main{
 }
 
 .iconMore{
-display: flex;
-flex-wrap: wrap;
-overflow-wrap: normal;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-wrap: normal;
 }
 .iconMore i{
   padding-right: 5px;
@@ -264,10 +262,15 @@ overflow-wrap: normal;
   display: none;
 }
 
+.openBtn{
+  margin: 0 !important;
+}
+
+
 /* ############# Footer ############# */
 
 footer{
-  margin:0 !important;
+  margin-top: 40px !important;
 }
 
 footer p{
@@ -276,8 +279,9 @@ footer p{
   font-size: small !important;
   color: white;
   font-family: "Menlo";
-  
+
 }
+
 /* ############# media queries ############# */
 @media screen and (min-width: 450px) {
   #rib{
@@ -285,9 +289,9 @@ footer p{
   }
 }
 
-  @media screen and (min-width: 545px) {
+/* @media screen and (min-width: 545px) {
    
-  }
+} */
 
 @media screen and (min-width: 768px) {
   #burger{display: none;
@@ -323,6 +327,9 @@ footer p{
     align-items: center;
   }
 }
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */

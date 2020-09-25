@@ -8,7 +8,6 @@
   <div id="layerBackground">
     
     <div id="messageHTML">
-      <p>test</p>
       <i class="far fa-times-circle" onclick="closeLayer()"></i>
     </div>
     
