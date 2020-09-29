@@ -1,10 +1,10 @@
 <?php 
-require "page/header.php";
+require "template/header.php";
 ?>
 
 <h2>Statistique :</h2>
 
 
 <?php
-include "page/footer.php";
+include "template/footer.php";
 ?>

@@ -1,26 +1,27 @@
 <?php 
 require_once "data/userAccount.php";
-require "page/header.php";
+require "template/header.php";
+
+if(isset($_GET["id"])){
+   $id = htmlspecialchars($_GET["id"]);
+   $accounts = get_accounts();
+   $account = $accounts[$id];
+}
+
 ?>
 
-
-
 <a href="index.php" class="btn bgColorHoneyYellow ">Retour</a>
-
 
 <div class="card">
     <div class="card-header font-weight-bold">
     <?php 
     
-    if(isset($_GET["name"]) && !empty($_GET["name"])){
-        echo htmlspecialchars ($_GET["name"]);
-    }
     ?>
     </div>
     <div class="card-body">
-        <p class="card-title pCard"> <?php echo $value['number_account'] ?> <span> <?php echo $value['amount'] ?> € </span></p>
+        <p class="card-title pCard"> <?php echo $account['account'] ?> <span> <?php echo $account['amount'] ?> € </span></p>
         <hr>
-        <p class="card-text pCard ">Dernière opération : <span> <?php echo $value['last_operation'] ?>  € </span> </p>
+        <p class="card-text pCard ">Dernière opération : <span> <?php echo $account['last_operation'] ?>  € </span> </p>
         <div class="d-flex justify-content-between align-items-center">
             <div class="iconMore d-flex flex-wrap">
                 <a href="#" class="btnAccount"><i class="fas fa-piggy-bank"></i>Détail du compte</a>
@@ -39,5 +40,5 @@ require "page/header.php";
 
 
 <?php
-include "page/footer.php";
+include "template/footer.php";
 ?>
