@@ -1,5 +1,4 @@
   <?php
-
   $countType = " -- ";
   if(isset($_POST["countType"]) && !empty($_POST["countType"])){
       $countType = htmlspecialchars($_POST["countType"]);
@@ -10,7 +9,7 @@
       $amount = htmlspecialchars($_POST["amount"]) . " €";
   }
 
-  require "page/header.php";
+  require "template/header.php";
 
   ?>
 
@@ -52,7 +51,7 @@
         <p>
         
         <?php 
-        echo "$countType"
+        echo $countType
         ?>
         
         </p>
@@ -60,7 +59,7 @@
         <p>
 
         <?php 
-        echo "$amount";
+        echo $amount;
         ?>
 
         </p>
@@ -80,5 +79,5 @@
 
 
   <?php
-  include "page/footer.php";
+  include "template/footer.php";
   ?>

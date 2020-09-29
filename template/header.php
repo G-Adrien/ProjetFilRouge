@@ -17,14 +17,14 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   
   <!-- Place favicon.ico in the root directory -->
-  
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
-<!-- link font -->
   <link href="//db.onlinewebfonts.com/c/9f94dc20bb2a09c15241d3a880b7ad01?family=Menlo" rel="stylesheet" type="text/css"/>
   <link href="https://fonts.googleapis.com/css2?family=Bellota+Text:wght@700&display=swap" rel="stylesheet"> 
   
   <script src="https://kit.fontawesome.com/0f0f7849a1.js" crossorigin="anonymous"></script>
+  
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+<!-- link font -->
   <meta name="theme-color" content="#fafafa">
 </head>
 
