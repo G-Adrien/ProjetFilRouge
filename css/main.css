@@ -137,6 +137,10 @@ textarea {
 body{
   position: relative;
 }
+
+  /* ############# layer ############# */
+
+
 #layerBackground{
   top:0;
   position: fixed;
@@ -206,6 +210,18 @@ h1{
   font-family: "Menlo";
   display: none;
 }
+/* ############# Logout ############# */
+  #prout{
+    color: teal;
+    
+  }
+
+.Logout {
+ margin: 1em;
+ display: flex;
+ justify-content: end;
+}
+
 
 /* ############# Main ############# */
 

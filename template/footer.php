@@ -5,13 +5,14 @@
     </div>
   </footer>
 
-  <div id="layerBackground">
+  <!-- <div id="layerBackground">
     <div id="messageHTML">
       <i class="far fa-times-circle" onclick="closeLayer()"></i>
       <div id=safetyRulles>
       </div>
     </div> 
-  </div>
+  </div> -->
+  <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||A DE COMMENTER + LAYER +||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
   
   
   

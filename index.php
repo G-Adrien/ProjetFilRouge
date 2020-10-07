@@ -4,7 +4,6 @@ require "template/header.php";
 $user_account = get_accounts();
 ?>
 
-
 <h2>Vos comptes :</h2>
 
 <?php
