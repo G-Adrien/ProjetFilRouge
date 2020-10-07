@@ -66,7 +66,7 @@ Ajout de **PHP** (version 7)
 >- Serveur Apache2
 >- Base Boilerplate
 
-### Projet de semaine n°13 AFPA Développeur Web
+## Projet de semaine n°13 AFPA Développeur Web
 
 Ajout d'une **base de données**.
 
@@ -90,6 +90,31 @@ Ajout d'une **base de données**.
 >- créer une base de données nommée banque_php mais aussi supprimer tout base de données pré-existante nommée banque_php de tel sorte que votre fichier puisse toujours être importé sans conflit
 >- créer un utilisateur nommé banquePHP et supprimer tout utilisateur pré-existant portant le même nom. Vous êtes libres de choisir son mot de passe. Cet utilisateur ne doit avoir les droits que sur la base de données banque_php (autrement-dit il n’a pas accès aux éventuelles autres bases de données).
 >- Créer les tables nécessaires à l’application avec les types de données  qui vous semblent les plus pertinents et efficaces- Insérer dans chaque table au moins 2 lignes
+
+## Projet de semaine n°14 AFPA Développeur Web
+
+Intégrer une **base de données** dans son application PHP.
+
+> ### Spécifications fonctionnelles
+>
+>- L’application n’est accessible qu’aux seuls utilisateurs connectés
+>- Quand un utilisateur non connecté va sur l’application il est redirigé vers une page de connexion avec un formulaire
+>- Un utilisateur se connecte à l’aide d’une adresse mail et d’un mot de passe
+>- Un utilisateur connecté peut se déconnecter
+>- Une fois connecté, l’utilisateur voit uniquement ses comptes en banque personnels. Pour l’instant il ne voit pas la dernière opération effectuée sur le compte, juste les comptes avec leurs informations.
+>- Quand l’utilisateur clique sur un compte en banque, il arrive sur une page dédié au compte où il voit les informations du compte mais aussi les dernières opérations effectuées sur le compte
+>- Via une page dédiée un utilisateur peut créer un nouveau compte personnel à l’aide d’un formulaire. Une fois créé le compte apparaît sur la page d’accueil. Attention le compte doit respecter les conditions minimum de création de compte (bon type et bon montant)
+>- L’utilisateur peut effectuer des dépôts ou des retraits sur le compte de son choix.  Le montant du compte est alors mis à jour et une nouvelle opération est enregistrée sur le compte.
+>
+> ### Spécifications techniques
+>
+>- PHP7
+>- Utilisation de PDO pour se connecter à la base de données
+>- SGBD: Mysql
+>- Serveur: Apache2
+>
+>Vous réaliserez une arborescence fonctionnelle du site avec les pages et les actions réalisables sur ces pages.
+>
 
 &nbsp;
 
