@@ -1,3 +1,12 @@
+<?php 
+// session_start();
+// var_dump($_SESSION);
+// if(!isset($_SESSION["user"]) || empty($_SESSION["user"])) {
+//     header("Location: login.php");
+//     exit();
+// }
+?>
+
 <!doctype html>
 <html class="no-js" lang="fr">
 

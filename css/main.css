@@ -280,7 +280,11 @@ main{
 .openBtn{
   margin: 0 !important;
 }
+/* ############# new account ############# */
 
+.card-form-newAccount{
+  margin-bottom: 1em;
+}
 
 /* ############# Footer ############# */
 
