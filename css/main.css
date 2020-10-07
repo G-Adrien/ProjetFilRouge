@@ -144,8 +144,6 @@ body{
   height: 100vh;
   background-color: rgba(62, 62, 62, 0.598);
   z-index: 1000;
-  display: none;
-  /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ligne du dessus à supprimer !!! */
 }
 
 #messageHTML{
@@ -169,6 +167,7 @@ body{
 .fa-times-circle:hover{
 cursor: pointer;
 }
+
 
    /* ############# Header ############# */
 

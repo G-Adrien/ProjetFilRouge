@@ -2,7 +2,6 @@
   <footer class="jumbotron jumbotron-fluid bgColorQueenBlue">
     <div class="container">
       <p class="lead">DEV BANK - tous droits réservés © 2020 </p>
-      <p class="lead">Site crée avec Bootstrap. </p>
     </div>
   </footer>
 

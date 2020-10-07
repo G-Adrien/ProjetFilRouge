@@ -58,3 +58,6 @@
     </ul>
   </nav>
   <main class="container">
+  <div class="Logout">
+    <a href="">Déconnexion</a>
+  </div>
