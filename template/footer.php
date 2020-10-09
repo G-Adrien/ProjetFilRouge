@@ -8,7 +8,7 @@
   <!-- <div id="layerBackground">
     <div id="messageHTML">
       <i class="far fa-times-circle" onclick="closeLayer()"></i>
-      <div id=safetyRulles>
+      <div id=safetyRules>
       </div>
     </div> 
   </div> -->
@@ -24,7 +24,7 @@
   if(isset($script)){
     echo $script;
   }
-   ?>
+?>
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;

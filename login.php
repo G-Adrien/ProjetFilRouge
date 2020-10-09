@@ -38,12 +38,12 @@
         <p>Veuillez saisir votre adresse e-mail ainsi que votre mot de passe</p>
         <form>
         <div class="form-group">
-            <label for="exampleInputEmail1">Adresse E-mail:</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Entrer ici votre adresse e-mail">
+            <label for="email">Adresse E-mail:</label>
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Entrer ici votre adresse e-mail">
         </div>
         <div class="form-group">
-            <label for="exampleInputPassword1">Mot de passe:</label>
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Entrer ici votre mot de passe">
+            <label for="password">Mot de passe:</label>
+            <input type="password" class="form-control" id="password" placeholder="Entrer ici votre mot de passe">
         </div>
         <div class="center">
             <button type="submit" class="btn btn-warning ">Entrer</button>
@@ -57,7 +57,40 @@
     </footer>
 
 
+<?php
 
+if(!empty($_POST) && isset($_POST["login"])){
+  //Connect to database
+  try{
+      $db = new PDO('mysql:host=localhost;dbname=banque_php', 'BanquePHP', 'banque76');
+      echo "Ook";
+  } catch (PDOException $e) {
+      print "Erreur : " . $e->getMessage() . "<br/>";
+      die();
+  }
+
+  $query = $db->prepare(
+      "SELECT * FROM user
+      WHERE mail_address = :email"
+  );
+  echo $_POST["email"];
+  $query->execute([
+      "email" => $_POST["email"]
+  ]);
+
+  $user = $query->fetch(PDO::FETCH_ASSOC);
+  var_dump($user);
+  if($user) {
+      // If password match
+      if(password_verify($_POST["password"], $user["password_user"])) {
+          session_start();
+          $_SESSION["user"]= $user;
+          header("Location: index.php");
+      }
+  }
+}
+
+?> 
 
 
 
@@ -73,7 +106,7 @@
   if(isset($script)){
     echo $script;
   }
-   ?>
+?>
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
