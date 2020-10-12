@@ -1,3 +1,32 @@
+    <?php
+    if(!empty($_POST) && isset($_POST["login"])){
+
+      //Connect to database
+      try{
+        $db = new PDO('mysql:host=localhost;dbname=banque_php', 'BanquePHP', 'banque76');
+      } catch (PDOException $e) {
+          print "Erreur : " . $e->getMessage() . "<br/>";
+          die();
+      }
+      $query = $db->prepare(
+        "SELECT * FROM user WHERE email = :email"
+      );
+      $query->execute([
+        "email"=>$_POST["email"]
+      ]);
+      $user = $query->fetch(PDO::FETCH_ASSOC);
+      if($user == true){
+        if($_POST["password"]===$user["password"]){
+          session_start();
+          $_SESSION["user"]=$user;
+
+          header("Location: index.php");
+          exit();
+        }
+      }
+    }
+?>
+
 <!doctype html>
 <html class="no-js" lang="fr">
 
@@ -36,18 +65,18 @@
     <div class="container card-log">
         <h3>Connexion</h3>
         <p>Veuillez saisir votre adresse e-mail ainsi que votre mot de passe</p>
-        <form>
-        <div class="form-group">
-            <label for="email">Adresse E-mail:</label>
-            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Entrer ici votre adresse e-mail">
-        </div>
-        <div class="form-group">
-            <label for="password">Mot de passe:</label>
-            <input type="password" class="form-control" id="password" placeholder="Entrer ici votre mot de passe">
-        </div>
-        <div class="center">
-            <button type="submit" class="btn btn-warning ">Entrer</button>
-        </div>
+        <form action="" method="post">
+          <div class="form-group">
+              <label for="email">Adresse E-mail:</label>
+              <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Entrer ici votre adresse e-mail">
+          </div>
+          <div class="form-group">
+              <label for="password">Mot de passe:</label>
+              <input type="password" class="form-control" id="password" name="password" placeholder="Entrer ici votre mot de passe">
+          </div>
+          <div class="center">
+              <button type="submit" class="btn btn-warning " name="login">Entrer</button>
+          </div>
         </form>
     </div>
     <footer>
@@ -56,48 +85,6 @@
         </div>
     </footer>
 
-
-<?php
-
-if(!empty($_POST) && isset($_POST["login"])){
-  //Connect to database
-  try{
-      $db = new PDO('mysql:host=localhost;dbname=banque_php', 'BanquePHP', 'banque76');
-      echo "Ook";
-  } catch (PDOException $e) {
-      print "Erreur : " . $e->getMessage() . "<br/>";
-      die();
-  }
-
-  $query = $db->prepare(
-      "SELECT * FROM user
-      WHERE mail_address = :email"
-  );
-  echo $_POST["email"];
-  $query->execute([
-      "email" => $_POST["email"]
-  ]);
-
-  $user = $query->fetch(PDO::FETCH_ASSOC);
-  var_dump($user);
-  if($user) {
-      // If password match
-      if(password_verify($_POST["password"], $user["password_user"])) {
-          session_start();
-          $_SESSION["user"]= $user;
-          header("Location: index.php");
-      }
-  }
-}
-
-?> 
-
-
-
-
-
-
-  
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>

@@ -1,10 +1,11 @@
 <?php 
-// session_start();
-// var_dump($_SESSION);
-// if(!isset($_SESSION["user"]) || empty($_SESSION["user"])) {
-//     header("Location: login.php");
-//     exit();
-// }
+
+session_start();
+if(!isset($_SESSION["user"]) || empty($_SESSION["user"])) {
+    header("Location: login.php");
+    exit();
+}
+
 ?>
 
 <!doctype html>
@@ -68,5 +69,5 @@
   </nav>
   <main class="container">
     <div class="Logout">
-      <a href="#" class="btnAccount font-weight-bold">Déconnexion</a>
+      <a href="logout.php" class="btnAccount font-weight-bold">Déconnexion</a>
     </div>
