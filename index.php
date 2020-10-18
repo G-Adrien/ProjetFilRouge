@@ -9,6 +9,31 @@ $user_account = get_accounts();
 
 <h2>Vos comptes :</h2>
 
+<?php 
+
+try{
+  $db = new PDO('mysql:host=localhost;dbname=Banque_PHP', 'BanquePHP', 'banque76');
+} catch (PDOException $e) {
+  print "Erreur : " . $e->getMessage() . "<br/>";
+  die();
+}
+
+// Send the query to mysql
+
+$query = $db->query(
+  "SELECT account_type, amount
+  FROM User AS u
+  INNER JOIN Account AS a
+  ON u.id = a.user_id
+  WHERE u.email = 'r.dupont@gmail.com'"
+  );
+//Extract data from the query as an associative array
+$userAccount = $query->fetchALL(PDO::FETCH_ASSOC);
+
+var_dump($user_account);
+echo $userAccount["account_type"];
+?>
+
 <?php
 foreach($user_account as $key => $value): 
 ?>
@@ -18,7 +43,7 @@ foreach($user_account as $key => $value):
       <?php echo $value['account'] ?>
     </div>
     <div class="card-body">
-      <p class="card-title pCard"> <?php echo $value['number'] ?> <span> <?php echo $value['amount'] ?> € </span></p>
+      <p class="card-title pCard"> Solde du Compte: <span> <?php echo $value['amount'] ?> € </span></p>
       <hr>
       <p class="card-text pCard ">Dernière opération : <span> <?php echo $value['last_operation'] ?>  € </span> </p>
       <div class="d-flex justify-content-between align-items-center">

@@ -16,7 +16,7 @@
       ]);
       $user = $query->fetch(PDO::FETCH_ASSOC);
       if($user == true){
-        if($_POST["password"]===$user["password"]){
+        if(password_verify($_POST["password"],$user["password"])){
           session_start();
           $_SESSION["user"]=$user;
 

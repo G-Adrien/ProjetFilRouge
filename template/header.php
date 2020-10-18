@@ -6,6 +6,8 @@ if(!isset($_SESSION["user"]) || empty($_SESSION["user"])) {
     exit();
 }
 
+
+
 ?>
 
 <!doctype html>
