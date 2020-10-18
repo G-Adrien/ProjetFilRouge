@@ -1,3 +1,15 @@
+<?php 
+
+session_start();
+if(!isset($_SESSION["user"]) || empty($_SESSION["user"])) {
+    header("Location: login.php");
+    exit();
+}
+
+
+
+?>
+
 <!doctype html>
 <html class="no-js" lang="fr">
 
@@ -58,3 +70,6 @@
     </ul>
   </nav>
   <main class="container">
+    <div class="Logout">
+      <a href="logout.php" class="btnAccount font-weight-bold">Déconnexion</a>
+    </div>

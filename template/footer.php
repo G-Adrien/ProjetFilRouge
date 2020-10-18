@@ -2,17 +2,17 @@
   <footer class="jumbotron jumbotron-fluid bgColorQueenBlue">
     <div class="container">
       <p class="lead">DEV BANK - tous droits réservés © 2020 </p>
-      <p class="lead">Site crée avec Bootstrap. </p>
     </div>
   </footer>
 
-  <div id="layerBackground">
+  <!-- <div id="layerBackground">
     <div id="messageHTML">
       <i class="far fa-times-circle" onclick="closeLayer()"></i>
-      <div id=safetyRulles>
+      <div id=safetyRules>
       </div>
     </div> 
-  </div>
+  </div> -->
+  <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||A DE COMMENTER + LAYER +||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
   
   
   
@@ -24,7 +24,7 @@
   if(isset($script)){
     echo $script;
   }
-   ?>
+?>
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;

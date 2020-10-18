@@ -1,0 +1,75 @@
+/* ############# FONT ############# */
+@import url(//db.onlinewebfonts.com/c/9f94dc20bb2a09c15241d3a880b7ad01?family=Menlo);
+@font-face {
+    font-family: "Menlo"; src: url("//db.onlinewebfonts.com/t/9f94dc20bb2a09c15241d3a880b7ad01.eot"); src: url("//db.onlinewebfonts.com/t/9f94dc20bb2a09c15241d3a880b7ad01.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/9f94dc20bb2a09c15241d3a880b7ad01.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/9f94dc20bb2a09c15241d3a880b7ad01.woff") format("woff"), url("//db.onlinewebfonts.com/t/9f94dc20bb2a09c15241d3a880b7ad01.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/9f94dc20bb2a09c15241d3a880b7ad01.svg#Menlo") format("svg");
+} 
+@import url('https://fonts.googleapis.com/css2?family=Bellota+Text&display=swap');
+
+/* ############# utility class ############# */
+
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+
+/* ######################################### */
+
+body{
+    position: relative;  
+}
+
+#background{
+   background:linear-gradient(#2f4858, #33658a, #f6ae2d);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: fixed;
+   height: 100vh;
+   width: 100vw;
+   z-index: -1;
+   top: 0;
+}
+
+.card-log{
+    background-color: rgb(241, 241, 241);
+    padding: 2%;
+    border-radius: 10px;
+    width: 500px;
+}
+
+h1{
+    color: white;
+    font-family: Bellota Text;
+    text-align: center;
+    font-size: 5em;
+    margin-top: 10vh;
+}
+
+h3{
+    text-align: center;
+    font-size: 2em;
+}
+
+footer{
+    margin: 5px;
+    padding: 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: #33648a00;
+    display: flex;
+    justify-content: center;
+}
+  
+footer p{
+    border-radius: 25px;
+    color: white;
+    font-family: "Menlo";
+    font-size: small;
+    background-color: #33658a;
+    padding: 8px 25px;
+    margin: 0;
+    width: auto;
+}
+  

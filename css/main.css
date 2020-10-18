@@ -137,6 +137,10 @@ textarea {
 body{
   position: relative;
 }
+
+  /* ############# layer ############# */
+
+
 #layerBackground{
   top:0;
   position: fixed;
@@ -144,8 +148,6 @@ body{
   height: 100vh;
   background-color: rgba(62, 62, 62, 0.598);
   z-index: 1000;
-  display: none;
-  /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ligne du dessus à supprimer !!! */
 }
 
 #messageHTML{
@@ -169,6 +171,7 @@ body{
 .fa-times-circle:hover{
 cursor: pointer;
 }
+
 
    /* ############# Header ############# */
 
@@ -207,6 +210,18 @@ h1{
   font-family: "Menlo";
   display: none;
 }
+/* ############# Logout ############# */
+  #prout{
+    color: teal;
+    
+  }
+
+.Logout {
+ margin: 1em;
+ display: flex;
+ justify-content: end;
+}
+
 
 /* ############# Main ############# */
 
@@ -265,7 +280,11 @@ main{
 .openBtn{
   margin: 0 !important;
 }
+/* ############# new account ############# */
 
+.card-form-newAccount{
+  margin-bottom: 1em;
+}
 
 /* ############# Footer ############# */
 

@@ -16,7 +16,7 @@
 <div class="container">
   <div class="row">
     
-    <div class="col">
+    <div class="col card-form-newAccount">
       <div class="border rounded p-3">
         <h5>Ouvrir un nouveau compte :</h5>
         <form action="createAccount.php" method="post">
@@ -79,5 +79,5 @@
 
 
   <?php
-  include "template/footer.php";
+    include "template/footer.php";
   ?>

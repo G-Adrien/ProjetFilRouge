@@ -15,11 +15,11 @@ if(isset($_GET["id"])){
 <div class="card">
     <div class="card-header font-weight-bold">
     <?php 
-    
+    echo $account['account']
     ?>
     </div>
     <div class="card-body">
-        <p class="card-title pCard"> <?php echo $account['account'] ?> <span> <?php echo $account['amount'] ?> € </span></p>
+        <p class="card-title pCard"> <?php echo $account['number'] ?> <span> <?php echo $account['amount'] ?> € </span></p>
         <hr>
         <p class="card-text pCard ">Dernière opération : <span> <?php echo $account['last_operation'] ?>  € </span> </p>
         <div class="d-flex justify-content-between align-items-center">
