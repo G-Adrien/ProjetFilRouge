@@ -65,11 +65,11 @@ if(!isset($_SESSION["user"]) || empty($_SESSION["user"])) {
             <a class="nav-link colorHoneyYellow" href="createAccount.php">Nouveau Compte</a>
           </li>
       <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Virement</a>
+        <a class="nav-link colorHoneyYellow" href="transaction.php">Transaction</a>
       </li>
     </ul>
   </nav>
   <main class="container">
     <div class="Logout">
-      <a href="logout.php" class="btnAccount font-weight-bold">Déconnexion</a>
+      <a href="model/model_logout.php" class="btnAccount font-weight-bold">Déconnexion</a>
     </div>

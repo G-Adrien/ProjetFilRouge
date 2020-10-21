@@ -1,6 +1,7 @@
 <?php 
-require_once "data/userAccount.php";
+
 require "template/header.php";
+require "model/model.php"
 
 if(isset($_GET["id"])){
    $id = htmlspecialchars($_GET["id"]);
