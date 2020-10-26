@@ -50,7 +50,7 @@ function getAccounts($db, $id){
         "id" => $id
     ]);
 
-    $accounts_list = $query->fetch(PDO::FETCH_ASSOC);
+    $accounts_list = $query->fetchAll(PDO::FETCH_ASSOC);
     return $accounts_list;
 
 }

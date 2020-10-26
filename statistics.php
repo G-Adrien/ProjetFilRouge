@@ -1,4 +1,6 @@
 <?php 
+require "model/start_session.php";
+
 require "template/header.php";
 ?>
 

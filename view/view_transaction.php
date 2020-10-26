@@ -17,9 +17,9 @@
           <div class="form-group">
             <label for="accountType">Compte :</label>
             <select class="form-control" id="accountType" name="accountType">
-              <?php foreach($account_list as $account):?>
+              <?php foreach($accounts_list as $account):?>
 
-              <option value =<?php echo $account["id"]?> ></option>
+              <option value =<?php echo $account["id"]?> ><?php echo $account["id"] . " : " .$account["account_type"] ?> </option>
 
               <?php endforeach; ?>
 

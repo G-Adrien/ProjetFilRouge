@@ -1,4 +1,5 @@
   <?php
+require "model/start_session.php";
 
 
   $accountType = " -- ";

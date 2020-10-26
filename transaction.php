@@ -1,4 +1,5 @@
 <?php
+require "model/start_session.php";
 
 $accountType = " -- ";
 if(isset($_POST["accountType"]) && !empty($_POST["accountType"])){
@@ -21,12 +22,8 @@ require "model/model_transaction.php";
 $user = ($_SESSION["user"]);
 $id = $user["id"];
 $accounts_list = getAccounts($db, $id);
-var_dump($accounts_list);
 
 
 require "view/view_transaction.php";
-
-
-
 
 include "template/footer.php";
