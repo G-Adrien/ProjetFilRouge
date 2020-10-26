@@ -11,10 +11,10 @@ foreach ($userAccount as $key => $account){
 echo '
   <div class="card">
     <div class="card-header font-weight-bold">'
-      . $account['account_type'] .
+      . $account->getAccount_type() .
     '</div>
     <div class="card-body">
-      <p class="card-title pCard"> Solde du Compte: <span>'. $account['amount'] . '€ </span></p>
+      <p class="card-title pCard"> Solde du Compte: <span>'. $account->getAmount() . '€ </span></p>
       <hr>
       <p class="card-text pCard ">Dernière opération : <span> montant et label </span> </p>
       <div class="d-flex justify-content-between align-items-center">

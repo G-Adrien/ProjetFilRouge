@@ -1,11 +1,13 @@
 <?php  
 require "model/start_session.php";
+require "model/entity/account.php";
+require "model/account_model.php";
 
-
-
-require "model/model_index.php";
+$accountModel = new AccountModel();
+$userAccount = $accountModel->getAccounts($_SESSION["user"]);
 
 require "view/view_index.php";
+
 
 ?>
 

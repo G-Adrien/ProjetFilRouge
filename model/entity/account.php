@@ -2,6 +2,7 @@
 
 class Account{
     //propriété
+    protected int $id;
     protected int $amount;
     protected string $opening_date;
     protected string $account_type;
@@ -10,12 +11,17 @@ class Account{
     //méthode
 
     //setter
+    public function setId(int $id) {
+        $this->id = $id;
+    }
+
     public function setAmount(int $amount) {
-    $this->amount = $amount;
+        $this->amount = $amount;
     }
 
     public function setOpening_date(string $opening_date) {
     $this->opening_date = $opening_date;
+    }
 
     public function setAccount_type(string $account_type) {
     $this->account_type = $account_type;
@@ -25,6 +31,10 @@ class Account{
     $this->user_id = $user_id;
     }
     // getter
+    public function getId() {
+        return $this->id;
+    }
+
     public function getAmount() {
     return $this->amount;
     }
